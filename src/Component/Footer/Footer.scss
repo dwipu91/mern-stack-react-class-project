@@ -1,0 +1,38 @@
+footer {
+  .row {
+    .col-md-6 {
+      img {
+        width: 200px;
+        border-radius: 5px;
+      }
+    }
+    .col-md-2 {
+      h5 {
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 2px;
+      }
+      p {
+        margin-bottom: 0;
+        font-size: 14px;
+        letter-spacing: 1.2px;
+        font-weight: 300;
+        strong {
+          font-weight: bold;
+        }
+      }
+      .solcile_icone {
+        gap: 20px;
+        a {
+          color: #fff;
+          padding: 5px;
+          gap: 10px;
+          &:hover {
+            background: red;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+  }
+}

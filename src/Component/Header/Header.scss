@@ -1,0 +1,43 @@
+header {
+  background: #f9f9f9;
+  .row {
+    .col-md-3 {
+      a {
+        img {
+          width: 120px;
+          height: 70px;
+          box-sizing: border-box;
+        }
+      }
+    }
+    .col-md-8,
+    .col-md-1 {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      nav {
+        ul {
+          gap: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          li {
+            a {
+              color: #fff;
+              font-weight: 500;
+              font-size: 14px;
+              background: black;
+              padding: 5px 15px;
+              border-radius: 3px;
+              transition: all ease-in-out 0.2s;
+            }
+            .active {
+              background: #6ec531;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}

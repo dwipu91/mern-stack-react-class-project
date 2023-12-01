@@ -1,0 +1,10 @@
+.about {
+  background: #f9f9f9;
+  .about_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+}

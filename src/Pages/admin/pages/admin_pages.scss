@@ -1,0 +1,15 @@
+// catagory css start
+.admin_pannel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .left {
+    img {
+      box-sizing: border-box;
+      height: 280px;
+      width: 250px;
+      object-fit: cover;
+    }
+  }
+}
+//  catagory css end

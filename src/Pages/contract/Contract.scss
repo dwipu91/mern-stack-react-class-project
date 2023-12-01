@@ -1,0 +1,30 @@
+.c_form {
+  width: 600px;
+  margin: 20px auto;
+  border: 1px dotted black;
+  .header {
+    h1 {
+      text-align: center;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 0 0 15px 0;
+    }
+    button {
+      border: transparent;
+      background: green;
+      color: #fff;
+      padding: 10px 20px;
+      width: 100%;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  }
+}

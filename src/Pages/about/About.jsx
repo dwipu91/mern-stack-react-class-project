@@ -1,6 +1,11 @@
+import { useContext } from "react";
 import PageHeader from "../../Component/PageHeader/PageHeader";
 import "./about.scss";
+import MsgContext from "../../contex/MsgContext";
+
 const About = () => {
+  const { food } = useContext(MsgContext);
+
   return (
     <>
       <PageHeader title={"About"} />
@@ -14,6 +19,15 @@ const About = () => {
               <input type="text" className="form-control" />
             </li>
           </table>
+        </div>
+        <div>
+          {food.map((item, index) => {
+            return (
+              <h1 key={index}>
+                {index + 1} {item}
+              </h1>
+            );
+          })}
         </div>
       </section>
     </>

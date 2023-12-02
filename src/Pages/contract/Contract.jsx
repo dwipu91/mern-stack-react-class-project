@@ -1,6 +1,10 @@
 import { useState } from "react";
+
 import PageHeader from "../../Component/PageHeader/PageHeader";
 import "./Contract.scss";
+import Swal from "sweetalert2";
+
+//
 const Contract = () => {
   //
   const [input, setInput] = useState({
@@ -18,6 +22,34 @@ const Contract = () => {
       ...prevState,
       [e.target.name]: e.target.value,
     }));
+  };
+
+  // submit frome
+  const hendleFormSubmit = (e) => {
+    e.preventDefault();
+
+    // validation
+    if (
+      !input.name ||
+      !input.email ||
+      !input.gender ||
+      !input.password ||
+      !input.food ||
+      !input.cell
+    ) {
+      Swal.fire({
+        title: "Do you want to save the changes?",
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: "Save",
+        denyButtonText: `Don't save`,
+      });
+    } else {
+      Swal.fire({
+        title: "Data add to server ",
+        icon: "success",
+      });
+    }
   };
 
   return (
@@ -84,7 +116,7 @@ const Contract = () => {
             value={input.password}
             onChange={hendleInputValue}
           />
-          <button>Create Now</button>
+          <button onClick={hendleFormSubmit}>Create Now</button>
         </form>
       </section>
     </>
